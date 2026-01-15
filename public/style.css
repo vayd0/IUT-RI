@@ -1,0 +1,56 @@
+:root {
+  --clr-mmi: #f54d94;
+  --clr-tc: #d0f36b;
+  --clr-gea: #fd9f42;
+  --clr-info: #06d6a0;
+  --clr-fcu: #9c4b9d;
+  --bg: #eeeeee;
+  --bg-black: #202020;
+}
+
+html,
+body {
+  background-color: white;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  height: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+h1 {
+  word-spacing: 1px;
+  word-break: break-word;
+}
+
+.hero-actions a .decos svg {
+  opacity: 0;
+  transform: rotate(250deg) scale(0);
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.btn-discover,
+.btn-help {
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.btn-discover:hover {
+  transform: rotate(-2deg) translateY(-5px);
+}
+
+.btn-help:hover {
+  transform: rotate(2deg) translateY(-5px);
+}
+
+.btn-discover:hover .decos svg,
+.btn-help:hover .decos #MailDeco {
+  opacity: 1;
+}
+
+.btn-discover:hover .decos #QuoteMark1 {
+  transform: rotate(20deg) scale(1);
+}
+
+.btn-discover:hover .decos #QuoteMark2,
+.btn-help:hover .decos #MailDeco {
+  transform: rotate(-20deg) scale(1);
+}
